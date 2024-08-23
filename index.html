@@ -5,70 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank's - Portfolio</title>
     <link rel="stylesheet" href="src/style/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-black text-amber-700" >
+<body class="bg-black text-amber-700 " >
     <!-- Navigation -->
     <nav>
-        <ul class=" h-24 flex justify-evenly items-center">
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>contact</li>
-        </ul>
+        <div>
+            <ul class="h-24 flex flex-wrap justify-evenly items-center">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    
 
     <!-- Hero section -->
-    <section id="#home" class="h-[650px] bg-white flex flex-col:2 place-content-center">
-        <div class=" place-content-center">
-            <h1 class="text-4xl font-bold">Shashank Kotla</h1>
-            <p class="text-lg">Software Engineer & Developer</p>
-        </div>
+    <section id="home" class="h-[630px] flex flex-col md:flex-row place-content-center bg-black backdrop-blur-md" style="background-image: url(./images/b1.jpg); background-repeat: no-repeat; background-size: cover;">
         <div>
-            <img src="" alt="" srcset="">
+            <div class=" mt-6 place-content-center w-[500px]">
+                <h1 class="text-3xl font-bold">Shashank Kotla</h1>
+                <p class="text-base backdrop-blur">"A Software Engineer passionate about leveraging technology to solve real-world problems. My expertise in Django, FastAPI, and modern web development frameworks empowers me to create innovative solutions and contribute to impactful projects."</p>
+            </div>
+        </div>
+        <div class=" flex justify-end items-center flex-row w-[425px]">
+            <img src="./images/linkedin.jpeg" alt="" srcset="" class="h-[350px] rounded-xl">
         </div>
     </section>
     
     <!-- About section -->
-   <section class="h-[350px]">
-    <h3 class="text-2xl flex place-content-center ">About Me</h3>
-    <p>random text</p>
-
-
+    <section id="about" class="h-auto grid justify-center items-center p-4">
+    
+        <h3 class="text-2xl flex place-content-center mb-4">About Me</h3>
+    
+        <div class="flex flex-col md:flex-row place-content-center">
+            <p class="p-2 h-auto md:h-[250px] w-full md:w-[40%] bg-gray-800 rounded-md items-center backdrop-blur-sm">"I’m Shashank Kotla, a detail-oriented programmer with over 8 months of experience as a Software Engineering Intern. I specialize in backend development using Django and FastAPI, and have a strong foundation in web technologies like HTML5, TailwindCSS, Python, JSON, and JavaScript. My hands-on experience spans the entire Software Development Life Cycle (SDLC), with familiarity in both Waterfall and Agile methodologies. I’m eager to tackle challenges in dynamic environments and contribute effectively to innovative projects."</p>
+            
+        </div>
    </section>
 
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="p-8">
-        <h2 class="text-3xl font-semibold mb-4">My Work</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="bg-gray-800 p-4 rounded">
-                <h3 class="text-xl font-semibold">Online-Calendar</h3>
-                <p class="text-sm">"It's a unique calender "</p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded">
-                <h3 class="text-xl font-semibold">Recreation-Website using Tailwind Css</h3>
-                <p class="text-sm">"It's an replication of Joho Website, using Tailwindcss."</p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded">
-                <h3 class="text-xl font-semibold">Integrating & Deployment Smart Contracts for crowdfunding</h3>
-                <p class="text-sm">This is my final year project where we developed a blockchain solution to prevent conflicts related to UPI money theft.</p>
-            </div>
-        </div>
-    </section>
+        <section id="portfolio" class="p-8">
+            <h2 class="flex justify-center text-3xl font-semibold mb-4 ">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center">
+                <div class="bg-gray-800 p-4 rounded">
+                    <h3 class="text-xl font-semibold">Online Calendar</h3>
+                    <p class="text-sm mb-2">An innovative calendar application designed to streamline scheduling and enhance productivity.</p>
+                    <p class="text-sm">Built with FastAPI for backend development, PostgreSQL for data management, and Google APIs for enhanced functionalities. This project includes features like user authentication and robust API endpoints.</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded">
+                    <h3 class="text-xl font-semibold">Recreation Website using TailwindCSS</h3>
+                    <p class="text-sm mb-2">A recreated version of the JOHO website, showcasing advanced design and responsive layouts.</p>
+                    <p class="text-sm">Developed using TailwindCSS, this project emphasizes modern web design principles and responsive design to create a visually appealing and user-friendly experience.</p>
+                    <a href="https://github.com/ShashankKotla/TailwindCss" target="_blank" class="text-blue-400">View Project Code</a>
+                </div>
+
+        </section>
+
+
 
 
         <!-- Contact Section -->
-        <section id="contact" class="p-8">
+        <section id="contact" class="p-8 grid place-content-center">
             <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
             <p class="text-base">
-                Feel free to reach out via email or connect with me on social media.
+                " Feel free to reach out via email or connect with me on social media".
             </p>
-            <ul class="flex space-x-4 mt-4">
-                <li><a href="#" class="text-maroon">LinkedIn</a></li>
-                <li><a href="#" class="text-maroon">GitHub</a></li>
-                <li><a href="#" class="text-maroon">Twitter</a></li>
-                <li><a href="#" class="text-maroon">Mail</a></li>
-            </ul>
+            <ul class="flex flex-col sm:flex-row space-x-0 sm:space-x-4 mt-4 place-content-center">
+                <li>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/shashank-k-684a37229" class="text-maroon">LinkedIn</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-github-alt"></i>
+                    <a href="#" class="https://github.com/ShashankKotla">GitHub</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <a href="mailto:shashankkotla50@gmail.com" class="text-maroon">Mail</a>
+                </li>
+
+            
         </section>
     
 
