@@ -743,9 +743,6 @@
     }
   }
 }
-.test {
-  background-color: var(--color-blue-500);
-}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
