@@ -1,5 +1,6 @@
-module.exports = {
-    content: ["./index.html"], // Specific to your file
+// tailwind.config.js (in root)
+export default {
+    content: ["./index.html"], // Scans your root HTML
     theme: { extend: {} },
     plugins: [],
   };
