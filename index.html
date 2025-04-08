@@ -27,18 +27,18 @@
         <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
             <!-- Logo/Name -->
             <a href="#" class="text-xl font-bold text-primary">SHASHANK</a>
-
+    
             <!-- Desktop Navigation -->
-             <div class="hidden md:flex space-x-8">
+            <div class="hidden md:block space-x-8"> <!-- Changed to md:block -->
                 <a href="#about" class="hover:text-purple-500 transition-colors">About</a>
                 <a href="#skills" class="hover:text-purple-500 transition-colors">Skills</a>
                 <a href="#experience" class="hover:text-purple-500 transition-colors">Experience</a>
                 <a href="#projects" class="hover:text-purple-500 transition-colors">Projects</a>
                 <a href="#contact" class="hover:text-purple-500 transition-colors">Contact</a>
-             </div>
-             
-             <!-- Mobile Navigation Button -->
-             <button id="menu-toggle" class="block md:hidden focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
+            </div>
+            
+            <!-- Mobile Navigation Button -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none" aria-label="Toggle navigation menu" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -60,22 +60,23 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section class="bg-white py-16 md:py-24">
-            <div class="flex flex-col md:flex-row items-center justify-center">
-                <!-- col 1 -->
-                <div class="md:w-1/2 mb-8 md:mb-0 ml-3">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in">Developer</h1>
-                    <h2 class="text-xl md:text-2xl text-gray-600 mb-6 fade-in">Python & FastAPI Specialist | Google AI Essentials Certified</h2>
-                    <p class="text-gray-700 mb-8 fade-in">Building robust and scalable backend systems with mordern technologies.</p>
-
-                    <div class="flex flex-wrap gap-3 fade-in">
-                        <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">Contact Me</a>
-                        <a href="#projects" class="bg-white text-blue-700 border border-blue-700 px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">Projects</a>
+            <div class="container mx-auto px-4"> <!-- Added container for width control -->
+                <div class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto"> <!-- Added max-w-6xl -->
+                    <!-- col 1: Text -->
+                    <div class="md:w-1/2 mb-8 md:mb-0 ml-3">
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 fade-in">Developer</h1>
+                        <h2 class="text-xl md:text-2xl text-gray-600 mb-6 fade-in">Python & FastAPI Specialist | Google AI Essentials Certified</h2>
+                        <p class="text-gray-700 mb-8 fade-in">Building robust and scalable backend systems with modern technologies.</p>
+                        <div class="flex flex-wrap gap-3 fade-in">
+                            <a href="#contact" class="bg-blue-700 text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">Contact Me</a>
+                            <a href="#projects" class="bg-white text-blue-700 border border-blue-700 px-6 py-3 rounded-md hover:bg-primary/90 transition-colors">Projects</a>
+                        </div>
                     </div>
-                </div>
-                <!-- col-2  -->
-                <div class="md:w-2/5">
-                    <div class="rounded-lg overflow-hidden shadow-lg bg-gray-100 aspect-square flex items-center justify-center">
-                        <img src="/images/shashank.png" alt="profile image" class="w-full h-full object-cover">
+                    <!-- col-2: Image -->
+                    <div class="md:w-2/5 max-w-lg"> <!-- Added max-w-lg -->
+                        <div class="rounded-lg overflow-hidden shadow-lg bg-gray-100 aspect-square flex items-center justify-center">
+                            <img src="/images/shashank.png" alt="profile image" class="w-full h-full object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -114,7 +115,7 @@
         <section id="skills" class="py-16 bg-white">
             <div class="container mx-auto px-4">
                 <h2 class="text-3xl font-bold mb-10 text-center">Technical Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 max-w-5xl mx-auto"> <!-- Changed lg: to xl:, updated max-w -->
                     <!-- BAckend Development -->
                     <div class="border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow">
                         <h3 class="font-semibold text-xl mb-4">Backend Development</h3>
