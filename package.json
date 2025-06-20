@@ -1,30 +1,10 @@
 {
   "dependencies": {
-    "@tailwindcss/postcss": "^4.1.3",
-    "postcss": "^8.5.3",
-    "tailwindcss": "^4.1.3"
+    "@tailwindcss/cli": "^4.1.8",
+    "tailwindcss": "^4.1.8"
   },
-  "name": "portfolio",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "postcss ./src/input.css -o ./dist/output.css --watch",
-    "build": "postcss ./src/input.css -o ./dist/output.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ShashankKotla/ShashankKotla.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ShashankKotla/ShashankKotla.github.io/issues"
-  },
-  "homepage": "https://github.com/ShashankKotla/ShashankKotla.github.io#readme",
-  "description": "",
   "devDependencies": {
-    "postcss-cli": "^11.0.1"
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12"
   }
 }

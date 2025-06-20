@@ -1,0 +1,141 @@
+<svg width="100%" height="100%" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Gradient definitions -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E8F2FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9E2F9;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9E2F9;stop-opacity:0.6" />
+      <stop offset="50%" style="stop-color:#C4D7F2;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#B8CCEB;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#B8CCEB;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#A8C0E8;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#9AB4E5;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <radialGradient id="particle" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#D9E2F9;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#D9E2F9;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Filter for glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  
+  <!-- Animated flowing shapes -->
+  <g opacity="0.7">
+    <!-- Large flowing blob 1 -->
+    <path d="M200,300 C400,200 600,400 800,300 C1000,200 1200,350 1400,300 C1200,450 1000,600 800,500 C600,600 400,400 200,500 Z" 
+          fill="url(#wave1)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="-200,0; 0,20; -200,0" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="d" 
+               values="M200,300 C400,200 600,400 800,300 C1000,200 1200,350 1400,300 C1200,450 1000,600 800,500 C600,600 400,400 200,500 Z;
+                       M200,350 C450,250 550,450 800,350 C1050,250 1150,400 1400,350 C1150,500 1050,650 800,550 C550,650 450,450 200,550 Z;
+                       M200,300 C400,200 600,400 800,300 C1000,200 1200,350 1400,300 C1200,450 1000,600 800,500 C600,600 400,400 200,500 Z" 
+               dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Large flowing blob 2 -->
+    <path d="M-100,450 C100,350 300,550 500,450 C700,350 900,500 1100,450 C900,600 700,750 500,650 C300,750 100,550 -100,650 Z" 
+          fill="url(#wave2)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 200,-30; 0,0" dur="25s" repeatCount="indefinite"/>
+      <animate attributeName="d" 
+               values="M-100,450 C100,350 300,550 500,450 C700,350 900,500 1100,450 C900,600 700,750 500,650 C300,750 100,550 -100,650 Z;
+                       M-100,400 C150,300 250,600 500,400 C750,300 850,550 1100,400 C850,650 750,800 500,700 C250,800 150,600 -100,700 Z;
+                       M-100,450 C100,350 300,550 500,450 C700,350 900,500 1100,450 C900,600 700,750 500,650 C300,750 100,550 -100,650 Z" 
+               dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.6">
+    <!-- Particle 1 -->
+    <circle cx="150" cy="200" r="4" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 30,-50; 0,0" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.8;0.3" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particle 2 -->
+    <circle cx="350" cy="150" r="6" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -40,60; 0,0" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particle 3 -->
+    <circle cx="750" cy="180" r="3" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 50,-30; 0,0" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particle 4 -->
+    <circle cx="950" cy="250" r="5" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -25,45; 0,0" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particle 5 -->
+    <circle cx="500" cy="100" r="4" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 35,70; 0,0" dur="11s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Particle 6 -->
+    <circle cx="1050" cy="120" r="3" fill="url(#particle)">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -45,-25; 0,0" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Animated geometric elements -->
+  <g opacity="0.4">
+    <!-- Rotating ring 1 -->
+    <circle cx="200" cy="600" r="40" fill="none" stroke="#B8CCEB" stroke-width="2" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="0 200 600; 360 200 600" dur="30s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Rotating ring 2 -->
+    <circle cx="1000" cy="500" r="30" fill="none" stroke="#A8C0E8" stroke-width="1.5" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" 
+                        values="360 1000 500; 0 1000 500" dur="25s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.1;0.5;0.1" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Floating line elements -->
+    <line x1="100" y1="400" x2="200" y2="350" stroke="#D9E2F9" stroke-width="2" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; 20,30; 0,0" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="7s" repeatCount="indefinite"/>
+    </line>
+    
+    <line x1="800" y1="350" x2="900" y2="300" stroke="#C4D7F2" stroke-width="1.5" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" 
+                        values="0,0; -30,20; 0,0" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="9s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>
