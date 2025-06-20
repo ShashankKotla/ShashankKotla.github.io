@@ -1,0 +1,12 @@
+<svg class="absolute inset-0 w-full h-full z-[-1]" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="movingDots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4">
+        <animate attributeName="cy" values="4;8;4" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="r" values="1.5;2;1.5" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="fill" values="#CBD5E1;#94A3B8;#CBD5E1" dur="6s" repeatCount="indefinite" />
+      </circle>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#movingDots)" />
+</svg>

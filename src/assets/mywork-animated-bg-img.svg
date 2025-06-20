@@ -1,0 +1,24 @@
+<svg class="absolute inset-0 w-full h-full z-[-1] pointer-events-none" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradBright1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="gradBright2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Blob 1 -->
+  <circle cx="250" cy="300" r="200" fill="url(#gradBright1)">
+    <animate attributeName="cy" values="300;270;330;300" dur="6s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="250;270;230;250" dur="7s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- Blob 2 -->
+  <circle cx="900" cy="280" r="180" fill="url(#gradBright2)">
+    <animate attributeName="cy" values="280;250;310;280" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="cx" values="900;880;920;900" dur="6s" repeatCount="indefinite" />
+  </circle>
+</svg>

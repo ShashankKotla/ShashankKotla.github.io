@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@theme {
+  /* === Fonts === */
+  --font-body: "Space Grotesk", sans-serif;
+  --font-heading: "Inter", sans-serif;
+  --font-nav: "Manrope", sans-serif;
+  --font-texts: "Manrope", sans-serif;
+
+  /* === Colors === */
+  --color-bg: #ffffff; /* Background - White */
+  --color-bg-soft: #f0faff; /* Light Sky Blue */
+  --color-primary: #0ea5e9; /* Sky Blue */
+  --color-cta: #f59e0b; /* Saffron/Orange */
+  --color-yellow: #facc15;
+  --color-red: #ef4444;
+  --color-green: #22c55e;
+  --color-text: #1f2937; /* Dark Gray for text */
+}
