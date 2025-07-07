@@ -3,7 +3,7 @@
 > Hi! I'm Shashank 👋🏻
 
 ## 🚀 Live Preview
-[🔗 View Portfolio](https://shashankkotla.github.io)
+[🔗 View Portfolio](https://shashankkotla.com)
 
 
 ## 📬 Contact
